@@ -10,8 +10,10 @@ sql_file = open("lib/create.sql")
 sql_as_string = sql_file.read()
 cursor.executescript(sql_as_string)
 
+
 class TestCreate:
     '''Statement in create.sql'''
+    
 
     def test_creates_bears_with_name_column(self):
         '''creates a table "bears" with a column "name".'''
